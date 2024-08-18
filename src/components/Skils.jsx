@@ -77,7 +77,7 @@ const Skils = () => {
           {/* Back-End Section */}
           <div className="flex-1 text-center">
             <h3
-              className="text-2xl md:text-2xl mb-6 text-green-400"
+              className="text-2xl md:text-2xl mb-6 text-blue-400"
               data-aos="zoom-in"
             >
               Back-End

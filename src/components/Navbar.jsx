@@ -9,8 +9,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black text-gray-300 h-[100px] w-full fixed top-0 left-0 z-50">
-      <div className="max-w-[1200px] mx-auto flex justify-between items-center h-full">
+    <div className="bg-black h-[100px] text-gray-400 max-w-[1200px] mx-auto flex justify-between items-center">
+      
         <h1 className="text-3xl font-bold primary-color">Nethmini Prabodha</h1>
         <ul className="hidden md:flex">
           <li className="p-5  hover:text-blue-400">
@@ -33,7 +33,7 @@ const Navbar = () => {
         <div onClick={handleNav} className="block md:hidden">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
         </div>
-      </div>
+      
 
       {/* Mobile Menu */}
       <div

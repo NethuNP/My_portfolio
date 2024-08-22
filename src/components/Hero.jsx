@@ -5,7 +5,7 @@ import heroimage from "../assets/meee.png";
 const Hero = () => {
   return (
     <div
-      className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 bg-black md:pt-[160px] pt-[120px]"
+      className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 bg-black"
       id="hero"
     >
       <div className="col-span-1 my-auto mx-auto w-[300px] h-auto lg:w-[400px]">

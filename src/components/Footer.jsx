@@ -10,9 +10,9 @@ import {
 
 const Footer = () => {
   return (
-    <div className="max-w-[1200px] sm:h-[150px] p-12 flex justify-between items-center mx-auto">
-      <span className="primary-color">Nethmini Prabodha</span>
-      <div className="flex space-x-4">
+    <div className="max-w-[1200px] sm:h-[150px] p-12 grid md:grid-cols-3 grid-cols-1 items-center mx-auto">
+      <span className="primary-color text-center md:text-start">Nethmini Prabodha</span>
+      <div className="flex space-x-4 items-center justify-center">
         <a
           href="https://www.facebook.com/nethmini.praboda.54?mibextid=ZbWKwL"
           target="_blank"
@@ -61,7 +61,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <p className="primary-color">nethminiprabodha3@gmail.com</p>
+      <p className="primary-color flex text-center md:text-end">nethminiprabodha6@gmail.com</p>
     </div>
   );
 };

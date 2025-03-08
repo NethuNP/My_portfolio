@@ -11,36 +11,28 @@ const Projects = () => {
   }, []);
 
   return (
-    <div
-      className="max-w-[1200px] mx-auto p-5 md:pt-[120px] pt-[100px]"
-      id="projects"
-    >
+    <div className="max-w-[1200px] mx-auto p-5 md:pt-[120px] pt-[100px] min-h-screen" id="projects">
       <div className="pb-8 text-center">
-        <p className="text-4xl mb-3 font-bold primary-color" data-aos="zoom-in">
+        <p className="text-4xl mb-3 font-bold primary-color p-2" data-aos="zoom-in">
           My Projects
         </p>
         <p className="text-gray-400 hover:text-white mt-2" data-aos="zoom-in">
-          Check out some of my recent individual projects here and you can find
-          out my other group projects following my GitHub.
+          Check out some of my recent individual projects here, and you can find
+          more of my group projects on my GitHub.
         </p>
       </div>
 
-      <div
-        className="grid sm:grid-cols-3 md:grid-cols-2 gap-8 mt-6"
-        data-aos="fade-up"
-      >
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mt-6" data-aos="fade-up">
         {/* Project 1 */}
-        <div className="relative group rounded-lg shadow-lg overflow-hidden">
+        <div className="relative group rounded-lg shadow-lg overflow-hidden border border-blue-500">
           <img
             src={proj1}
             alt="Job Portal"
-            className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+            className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-80 transition duration-500"></div>
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-500">
-            <h3 className="text-2xl font-bold text-white mb-4">
-              MERN Job Portal
-            </h3>
+            <h3 className="text-2xl font-bold text-white mb-4">MERN Job Portal</h3>
             <a
               href="https://github.com/NethuNP/Job-Portal-react-project-Individual-"
               target="_blank"
@@ -54,11 +46,11 @@ const Projects = () => {
         </div>
 
         {/* Project 2 */}
-        <div className="relative group rounded-lg shadow-lg overflow-hidden">
+        <div className="relative group rounded-lg shadow-lg overflow-hidden border border-blue-500">
           <img
             src={proj2}
             alt="Portfolio"
-            className="w-full h-full object-cover transform group-hover:scale-110 transition duration-500"
+            className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-80 transition duration-500"></div>
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-500">

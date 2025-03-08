@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div>
       <div
-        className="max-w-[1200px] mx-auto bg-black md:pt-[90px] pt-[100px]"
+        className="max-w-[1200px] mx-auto bg-black md:pt-[90px] pt-[100px] "
         id="contact"
       >
         <div className="text-center">

@@ -8,26 +8,25 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const navbar = [
+    { name: "Home", link: "#hero" },
+    { name: "Skills", link: "#skills" },
+    { name: "About", link: "#about" },
+    { name: "Projects", link: "#projects" },
+    { name: "Work Experience", link: "#experience" },
+    { name: "Contact", link: "#contact" },
+  ];
+
   return (
-    <div className="bg-black text-gray-300 h-[100px] w-full fixed top-0 left-0 z-50">
+    <div className="bg-black text-gray-300 h-[100px] w-full fixed top-0 left-0 z-50 ">
       <div className="max-w-[1200px] mx-auto flex justify-between items-center h-full">
         <h1 className="text-3xl font-bold primary-color">Nethmini Prabodha</h1>
-        <ul className="hidden md:flex">
-          <li className="p-5  hover:text-blue-400">
-            <a href="#hero">Home</a>
-          </li>
-          <li className="p-5 hover:text-blue-400">
-            <a href="#skills">Skills</a>
-          </li>
-          <li className="p-5 hover:text-blue-400">
-            <a href="#about">About</a>
-          </li>
-          <li className="p-5 hover:text-blue-400">
-            <a href="#projects">My Projects</a>
-          </li>
-          <li className="p-5 hover:text-blue-400">
-            <a href="#contact">Contact</a>
-          </li>
+        <ul className="hidden md:flex ">
+          {navbar.map((item, index) => (
+            <li key={index} className="mx-6  hover:text-blue-500 text-[20px]">
+              <a href={item.link}>{item.name}</a>
+            </li>
+          ))}
         </ul>
 
         <div onClick={handleNav} className="block md:hidden mr-6">
@@ -39,38 +38,17 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed h-full left-0 top-0 w-[60%] bg-[#202121] z-10 ease-in-out duration-500"
+            ? "fixed h-full left-0 top-0 w-[60%] bg-[#202121] z-10 ease-in-out duration-500 container mx-auto"
             : "fixed left-[-100%]"
         }
       >
-        <h1 className="text-3xl primary-color m-4">Nethmini Prabodha</h1>
-        <ul className="pt-8 text-2xl">
-          <li className="p-2">
-            <a href="#hero" onClick={handleNav}>
-              Home
-            </a>
-          </li>
-
-          <li className="p-2">
-            <a href="#skills" onClick={handleNav}>
-              Skills
-            </a>
-          </li>
-          <li className="p-2">
-            <a href="#about" onClick={handleNav}>
-              About
-            </a>
-          </li>
-          <li className="p-2">
-            <a href="#projects" onClick={handleNav}>
-              My Projects
-            </a>
-          </li>
-          <li className="p-2">
-            <a href="#contact" onClick={handleNav}>
-              Contact
-            </a>
-          </li>
+        <h1 className="md:text-3xl text-2xl primary-color m-4">Nethmini Prabodha</h1>
+        <ul className="pt-8 md:text-2xl text-xl m-4 md:m-0">
+          {navbar.map((item, index) => (
+            <li key={index} className="my-4">
+              <a href={item.link}>{item.name}</a>
+            </li>
+          ))}
         </ul>
       </div>
     </div>

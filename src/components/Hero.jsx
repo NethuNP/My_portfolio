@@ -1,43 +1,54 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import heroimage from "../assets/meee.png";
+import heroimage from "../assets/nethmini.png";
 
 const Hero = () => {
   return (
     <div
-      className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-[1200px] md:h-[70vh] mx-auto py-8 bg-black md:pt-[160px] pt-[120px]"
+      className="grid grid-cols-1 md:grid-cols-2 container mx-auto gap-6 md:h-screen py-8 bg-black md:pt-[160px] pt-[100px] items-center"
       id="hero"
     >
-      <div className="col-span-1 my-auto mx-auto w-[300px] h-auto lg:w-[400px]">
-        <img src={heroimage} alt="hero image" />
+      {/* Image Section */}
+      <div className="flex justify-center items-center">
+        <img
+          src={heroimage}
+          alt="Nethmini Prabodha"
+          className="md:w-[400px] w-[250px] h-auto p-6 md:p-0"
+        />
       </div>
 
-      <div className="col-span-2 px-5 my-auto">
-        <h1 className="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold">
-          <span className="primary-color"> I'm a</span>
+      {/* Text Section */}
+      <div className="flex flex-col text-center md:text-start">
+        <div className="text-white text-2xl  md:text-[60px] font-extrabold leading-tight">
+          <span className="primary-color">I'm a</span>
           <br />
-          <TypeAnimation
-            sequence={["Full Stack Developer", 1000, "UI / UX Designer", 1000]}
-            wrapper="span"
-            speed={50}
-            repeat={Infinity}
-          />
-        </h1>
-        <p className="text-gray-400 sm:text-lg my-6 lg:text-xl">
-          I'm Nethmini Prabodha and I am looking for Internship as Full-Stack
-          developer or UI/UX Designer.
+          <div className="mt-4">
+            <TypeAnimation
+              sequence={["Full Stack Developer", 1000, "MERN Stack Developer", 1000]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
+          </div>
+        </div>
+
+        <p className="text-gray-400 text-base sm:text-lg md:text-xl leading-relaxed p-6 md:p-0 mt-4">
+          I'm Nethmini Prabodha, and I'm interested in MERN Stack development.
         </p>
 
-        <div className="my-10">
+        {/* Buttons Section */}
+        <div className="flex flex-wrap justify-center md:justify-start gap-4 md:my-10">
           <a
             href="https://drive.google.com/file/d/17E6xqYn6wfj3ZPn_mibWJiVpN9HfJLgd/view?usp=drivesdk"
-            className="px-6 py-3 w-full rounded-xl mr-4 bg-gradient-to-br from-blue-400 to-pink-600 text-white"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-5 py-3 sm:px-6 sm:py-3 rounded-xl bg-gradient-to-br from-blue-400 to-pink-600 text-white font-medium hover:scale-105 transition-transform"
           >
             Download CV
           </a>
           <a
             href="#contact"
-            className="px-6 py-3 w-full rounded-xl mr-4 border border-gray-400 hover:bg-gradient-to-br from-blue-400 to-pink-600 text-white hover:border-none"
+            className="px-5 py-3 sm:px-6 sm:py-3 rounded-xl border border-gray-400 text-white font-medium hover:bg-gradient-to-br from-blue-400 to-pink-600 hover:border-none hover:scale-105 transition-transform"
           >
             Contact
           </a>
@@ -48,7 +59,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
-
-

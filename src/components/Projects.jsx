@@ -12,9 +12,15 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="max-w-[1200px] mx-auto p-5 md:pt-[120px] pt-[100px] min-h-screen" id="projects">
+    <div
+      className="max-w-[1200px] mx-auto p-5 md:pt-[120px] pt-[100px] min-h-screen"
+      id="projects"
+    >
       <div className="pb-8 text-center">
-        <p className="text-4xl mb-3 font-bold primary-color p-2" data-aos="zoom-in">
+        <p
+          className="text-4xl mb-3 font-bold primary-color p-2"
+          data-aos="zoom-in"
+        >
           My Projects
         </p>
         <p className="text-gray-400 hover:text-white mt-2" data-aos="zoom-in">
@@ -23,7 +29,10 @@ const Projects = () => {
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mt-6" data-aos="fade-up">
+      <div
+        className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 mt-6"
+        data-aos="fade-up"
+      >
         {/* Project 1 */}
         <div className="relative group rounded-lg shadow-lg overflow-hidden border border-blue-500">
           <img
@@ -33,7 +42,9 @@ const Projects = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-80 transition duration-500"></div>
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-500">
-            <h3 className="text-2xl font-bold text-white mb-4">MERN Job Portal</h3>
+            <h3 className="text-2xl font-bold text-white mb-4">
+              MERN Job Portal
+            </h3>
             <a
               href="https://github.com/NethuNP/Job-Portal-react-project-Individual-"
               target="_blank"
@@ -75,9 +86,13 @@ const Projects = () => {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-80 transition duration-500"></div>
           <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-500">
-            <h3 className="text-2xl font-bold text-white mb-4">BookScape (Library Management System)
-              <h4 className="flex items-center justify-center">(Under Development)</h4>
-            </h3>
+            <div className="text-center">
+              <h3 className="text-2xl font-bold text-white mb-2">
+                BookScape (Library Management System)
+              </h3>
+              <h4 className="text-white text-lg">(Under Development)</h4>
+            </div>
+
             <a
               href="https://github.com/NethuNP/Library_Management-Frontend"
               target="_blank"
@@ -90,7 +105,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import proj1 from "../assets/JobPortal.png";
 import proj2 from "../assets/proj2.PNG";
+import proj3 from "../assets/proj3.PNG";
 import { MdOpenInNew } from "react-icons/md";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -66,7 +67,30 @@ const Projects = () => {
             </a>
           </div>
         </div>
+        <div className="relative group rounded-lg shadow-lg overflow-hidden border border-blue-500">
+          <img
+            src={proj3}
+            alt="Library Management System"
+            className="w-full h-64 object-cover transform group-hover:scale-110 transition duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-80 transition duration-500"></div>
+          <div className="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-500">
+            <h3 className="text-2xl font-bold text-white mb-4">BookScape (Library Management System)
+              <h4 className="flex items-center justify-center">(Under Development)</h4>
+            </h3>
+            <a
+              href="https://github.com/NethuNP/Library_Management-Frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="flex items-center text-white bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full transition duration-300">
+                View Project <MdOpenInNew className="ml-2" />
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
+      
     </div>
   );
 };

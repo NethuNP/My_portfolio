@@ -39,7 +39,7 @@ const Hero = () => {
         {/* Buttons Section */}
         <div className="flex flex-wrap justify-center md:justify-start gap-4 md:my-10">
           <a
-            href="https://drive.google.com/file/d/17E6xqYn6wfj3ZPn_mibWJiVpN9HfJLgd/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1IBq9wpQiwgTk2obpysNYLnl4GaHvBlzJ/view"
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-3 sm:px-6 sm:py-3 rounded-xl bg-gradient-to-br from-blue-400 to-pink-600 text-white font-medium hover:scale-105 transition-transform"
